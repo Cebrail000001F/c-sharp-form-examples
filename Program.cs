@@ -1,4 +1,4 @@
-namespace form_ornegi_3
+namespace form_ornegi_2
 {
     internal static class Program
     {

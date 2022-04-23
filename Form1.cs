@@ -1,4 +1,4 @@
-namespace form_ornegi_3
+namespace form_ornegi_2
 {
     public partial class Form1 : Form
     {
@@ -6,21 +6,15 @@ namespace form_ornegi_3
         {
             InitializeComponent();
         }
-        //yenibir list box olusturma yöntemi
+
         private void button1_Click(object sender, EventArgs e)
         {
-            ListBox YeniListbox=new ListBox();
-            YeniListbox.Items.Add("araba");
-            YeniListbox.Items.AddRange(new object[] { 5, 4, 6, 8});
-            this.Controls.Add(YeniListbox);
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            ListBox YeniListbox2 = new ListBox();
-            YeniListbox2.Location = new System.Drawing.Point(5, 100);        
-            this.Controls.Add(YeniListbox2);
+            Button yeniButton = new Button();
+            yeniButton.Text = "Yeni";
+            yeniButton.Location = new Point(100, 100);
+            yeniButton.Size = new Size(50,50);
+            yeniButton.BackColor = Color.Red;
+            this.Controls.Add(yeniButton);
         }
     }
 }

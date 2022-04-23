@@ -1,4 +1,4 @@
-﻿namespace form_ornegi_3
+﻿namespace form_ornegi_2
 {
     partial class Form1
     {
@@ -33,7 +33,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(333, 95);
+            this.button1.Location = new System.Drawing.Point(306, 109);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -49,7 +49,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
