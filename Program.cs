@@ -1,4 +1,4 @@
-namespace form_ders_1
+namespace Form_Ders_2
 {
     internal static class Program
     {

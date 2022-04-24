@@ -1,4 +1,4 @@
-namespace form_ders_1
+namespace Form_Ders_2
 {
     public partial class Form1 : Form
     {
@@ -6,29 +6,30 @@ namespace form_ders_1
         {
             InitializeComponent();
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            listBox1.Items.Add("bmw");
-            listBox1.Items.Add("Wv");
-            listBox1.Items.Add("Audi");
-            listBox1.Items.Add("mercedes");
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = "defter + kitap  " + "kalem"+ "cizgi" + "kare";
-            
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text);
+            textBox1.Text = "100$";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "100£";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            comboBox1.Items.Add(textBox1.Text);
+            textBox1.Text = "100TL";
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = richTextBox1 + "/nkiraplarrr";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = richTextBox1 + " /n " + dateTimePicker1.Text + "/n" + trackBar1.Value;
+        }
     }
 }
