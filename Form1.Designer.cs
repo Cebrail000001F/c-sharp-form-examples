@@ -1,4 +1,4 @@
-﻿namespace form_örnek_1
+﻿namespace form_ders_1
 {
     partial class Form1
     {
@@ -28,95 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxBirinciSayi = new System.Windows.Forms.TextBox();
-            this.textBoxİkinciSayi = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.Sonuc = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // listBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(194, 105);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Birinci sayiyi girin";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(197, 151);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ikinci sayiyi giriin";
-            // 
-            // textBoxBirinciSayi
-            // 
-            this.textBoxBirinciSayi.Location = new System.Drawing.Point(364, 103);
-            this.textBoxBirinciSayi.Name = "textBoxBirinciSayi";
-            this.textBoxBirinciSayi.Size = new System.Drawing.Size(100, 23);
-            this.textBoxBirinciSayi.TabIndex = 2;
-            // 
-            // textBoxİkinciSayi
-            // 
-            this.textBoxİkinciSayi.Location = new System.Drawing.Point(364, 149);
-            this.textBoxİkinciSayi.Name = "textBoxİkinciSayi";
-            this.textBoxİkinciSayi.Size = new System.Drawing.Size(100, 23);
-            this.textBoxİkinciSayi.TabIndex = 3;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(504, 81);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 94);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Location = new System.Drawing.Point(378, 194);
+            this.button1.Location = new System.Drawing.Point(357, 108);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Hesapla";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Sonuc
+            // textBox1
             // 
-            this.Sonuc.AutoSize = true;
-            this.Sonuc.Location = new System.Drawing.Point(390, 244);
-            this.Sonuc.Name = "Sonuc";
-            this.Sonuc.Size = new System.Drawing.Size(0, 15);
-            this.Sonuc.TabIndex = 5;
+            this.textBox1.Location = new System.Drawing.Point(210, 108);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 2;
             // 
-            // label3
+            // button2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(364, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "label3";
+            this.button2.Location = new System.Drawing.Point(72, 108);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(519, 239);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 4;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(365, 240);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(959, 563);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Sonuc);
+            this.BackColor = System.Drawing.Color.Gold;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBoxİkinciSayi);
-            this.Controls.Add(this.textBoxBirinciSayi);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.listBox1);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Form1";
-           
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,12 +112,11 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private TextBox textBoxBirinciSayi;
-        private TextBox textBoxİkinciSayi;
+        private ListBox listBox1;
         private Button button1;
-        private Label Sonuc;
-        private Label label3;
+        private TextBox textBox1;
+        private Button button2;
+        private ComboBox comboBox1;
+        private Button button3;
     }
 }
