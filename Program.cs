@@ -1,4 +1,4 @@
-namespace Form_Ders_2
+namespace radioButton_CheckBox_Panel
 {
     internal static class Program
     {
