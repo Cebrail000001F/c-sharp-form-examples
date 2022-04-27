@@ -1,4 +1,4 @@
-namespace radioButton_CheckBox_Panel
+namespace form_tekrar_1
 {
     internal static class Program
     {
