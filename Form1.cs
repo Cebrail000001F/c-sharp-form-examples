@@ -1,10 +1,7 @@
-namespace form_tekrar_1
+namespace Timer_Progress_Bar
 {
     public partial class Form1 : Form
     {
-        
-
-     
         public Form1()
         {
             InitializeComponent();
@@ -12,32 +9,20 @@ namespace form_tekrar_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int sayi1 = Convert.ToInt32(textBox1.Text);
-            int sayi2 = Convert.ToInt32(textBox2.Text);
+            timer1.Start();
+        }
 
-            for (int i = sayi1; i < sayi2; i++)
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value < 9500)
             {
-                if (i%2 == 1)
-                {
-                    richTextBox1.Text = richTextBox1.Text + i + " ";
-                }
+                progressBar1.Value = progressBar1.Value + 100;
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int sayi1 = Convert.ToInt32(textBox1.Text);
-            int sayi2 = Convert.ToInt32(textBox2.Text);
-
-            for (int i = sayi1; i < sayi2; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    richTextBox2.Text = richTextBox2.Text + i + " ";
-                }
-            }
+            timer1.Stop();
         }
-
-        
     }
 }

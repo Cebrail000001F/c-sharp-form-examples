@@ -1,4 +1,4 @@
-namespace form_tekrar_1
+namespace Timer_Progress_Bar
 {
     internal static class Program
     {
